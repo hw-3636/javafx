@@ -7,6 +7,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Layout01 extends Application {
+    // GitHub test text
+    // 수정 및 변동 시 특정 파일만 변경하여 푸쉬해보기
     @Override
     public void start(Stage stage) throws Exception {
         String fxmlFile = "/com/itgroup/fxml/" + "Layout01.fxml";
