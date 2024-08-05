@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.*?>
+
+
+<AnchorPane prefHeight="510.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itgroup.controller.ProductInsertController">
+   <children>
+      <GridPane layoutX="51.0" prefHeight="320.0" prefWidth="333.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="75.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="73.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="227.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+             <TextField fx:id="fxmlName" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <TextField fx:id="fxmlCompany" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="fxmlImage01" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="fxmlImage02" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="fxmlImage03" prefHeight="22.0" prefWidth="225.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="fxmlStock" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="fxmlPrice" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+             <ComboBox fx:id="fxmlCategory" prefHeight="22.0" prefWidth="238.0" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+            <TextField fx:id="fxmlContents" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="fxmlPoint" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+             <DatePicker fx:id="fxmlInputDate" prefHeight="22.0" prefWidth="232.0" GridPane.columnIndex="1" GridPane.rowIndex="10" promptText="날짜를 선택해 주세요." />
+             <Label text="상품명" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+             <Label text="제조회사" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+             <Label text="이미지01" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+             <Label text="이미지02" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+             <Label text="이미지03" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+             <Label text="재고" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+             <Label text="단가" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+             <Label text="카테고리" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+             <Label text="상세설명" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+             <Label text="적립포인트" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+             <Label text="입고일자" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+
+
+         </children>
+      </GridPane>
+      <Button onAction="#onProductInsert" mnemonicParsing="false" text="등록하기" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="420.0">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label layoutX="136.0" layoutY="41.0" text="상품 등록" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

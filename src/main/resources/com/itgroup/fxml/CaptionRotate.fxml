@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itgroup.controller.CaptionRotateController">
+   <center>
+      <TextArea fx:id="textArea" editable="false" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font></TextArea>
+   </center>
+   <bottom>
+      <GridPane prefWidth="600.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="myButton01" mnemonicParsing="false" onAction="#myButtonAction" prefWidth="300.0" text="아메리카노" GridPane.columnIndex="0" GridPane.rowIndex="0">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="myButton02" mnemonicParsing="false" onAction="#myButtonAction" prefWidth="300.0" text="카페라떼" GridPane.columnIndex="1" GridPane.rowIndex="0">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+             <Button fx:id="myButton03" mnemonicParsing="false" onAction="#myButtonAction" prefWidth="300.0" text="콜드브루" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                 <font>
+                     <Font size="18.0" />
+                 </font></Button>
+         </children>
+      </GridPane>
+   </bottom>
+   <top>
+      <Button fx:id="clearAndRotation" mnemonicParsing="false" onAction="#clearAndRotationText" prefHeight="30.0" text="내용 지우기/글자 회전" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+   </top>
+</BorderPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="375.0" prefWidth="332.0" xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/2.2" fx:controller="com.itgroup.controller.PaginationTestController">
+    <top>
+        <FlowPane alignment="CENTER_RIGHT" hgap="10.0" prefHeight="31.0" prefWidth="332.0">
+            <children>
+                <Label fx:id="pageStatus" text="Label"/>
+            </children>
+            <padding>
+                <Insets right="10.0"/>
+            </padding>
+        </FlowPane>
+    </top>
+    <center>
+        <VBox fx:id="vbox">
+            <TableView fx:id="tableView" prefHeight="298.0" prefWidth="316.0">
+                <columns>
+                    <TableColumn prefWidth="90.0" text="번호"/>
+                    <TableColumn prefWidth="90.0" text="이름"/>
+                    <TableColumn prefWidth="105.0" text="성씨"/>
+                </columns>
+            </TableView>
+
+        </VBox>
+    </center>
+    <bottom>
+        <Pagination fx:id="pagination" currentPageIndex="1" pageCount="10"/>
+    </bottom>
+</BorderPane>

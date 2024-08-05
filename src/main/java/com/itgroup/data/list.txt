@@ -1,0 +1,8 @@
+bread/브리오슈/brioche_01.png
+bread/치아바타/ciabatta_01.png
+bread/크로와상/croissant_02.png
+beverage/아메리카노/americano01.png
+beverage/카푸치노/cappuccino01.png
+beverage/바닐라라떼/vanilla_latte_01.png
+wine/레드와인/redwine01.png
+wine/화이트와인/whitewine01.png

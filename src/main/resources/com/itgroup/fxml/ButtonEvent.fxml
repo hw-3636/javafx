@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itgroup.controller.ButtonEventController">
+   <center>
+      <TextArea fx:id="textArea" editable="false" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font></TextArea>
+   </center>
+   <bottom>
+      <GridPane prefWidth="600.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnOK" mnemonicParsing="false" onAction="#btnOKAction" prefWidth="300.0" style="-fx-background-color: AliceBlue; -fx-text-fill: #008080;" text="확인" textFill="#aeb5c6" GridPane.columnIndex="0" GridPane.rowIndex="0">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#btnCancelAction" prefWidth="300.0" style="-fx-background-color: #F08080; -fx-text-fill: white;" text="취소" GridPane.columnIndex="1" GridPane.rowIndex="0">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>

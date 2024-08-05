@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="270.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itgroup.controller.LoginTestController">
+   <children>
+      <Label styleClass="labelClass" layoutX="50.0" layoutY="50.0" text="아이디 : hong    /   비밀번호 : 1234">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label id="labelId" layoutX="50.0" layoutY="85.0" text="아이디">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fxmlId" layoutX="140.0" layoutY="87.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <Label styleClass="labelClass" layoutX="50.0" layoutY="120.0" text="비밀번호">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="fxmlPassword" layoutX="140.0" layoutY="121.0">
+         <font>
+            <Font size="13.0" />
+         </font></PasswordField>
+      <Label fx:id="fxmlBinding" layoutX="50.0" layoutY="155.0" text="속성바인딩">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLogin" layoutX="100.0" layoutY="190.0" mnemonicParsing="false" text="login">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+         </padding>
+      </Button>
+      <Button fx:id="btnReset" layoutX="200.0" layoutY="190.0" mnemonicParsing="false" text="reset">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+         </padding>
+      </Button>
+   </children>
+</AnchorPane>

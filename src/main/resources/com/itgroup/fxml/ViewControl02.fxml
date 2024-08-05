@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itgroup.controller.ViewControlController02">
+   <children>
+      <Label layoutX="20.0" layoutY="20.0" text="리스트 뷰">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+       <Label layoutX="150.0" layoutY="20.0" text="테이블 뷰">
+           <font>
+               <Font size="14.0" />
+           </font></Label>
+       <Label layoutX="370.0" layoutY="20.0" text="이미지 뷰">
+           <font>
+               <Font size="14.0" />
+           </font></Label>
+      <ListView fx:id="listView" layoutX="20.0" layoutY="50.0" prefHeight="180.0" prefWidth="100.0" />
+      <TableView fx:id="tableView" layoutX="150.0" layoutY="50.0" prefHeight="180.0" prefWidth="190.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="이름" />
+          <TableColumn prefWidth="99.0" text="이미지" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="imageView" fitHeight="180.0" fitWidth="200.0" layoutX="370.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="200.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleButtonAction" text="확인">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="25.0" right="25.0" top="5.0" />
+         </padding></Button>
+      <Button layoutX="320.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleCancelAction" text="취소">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="25.0" right="25.0" top="5.0" />
+         </padding>
+      </Button>
+   </children>
+</AnchorPane>

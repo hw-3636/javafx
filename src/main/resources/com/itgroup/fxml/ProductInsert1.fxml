@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="540.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itgroup.controller.ProductInsertController">
+   <children>
+       <!-- 변수 정의 -->
+       <fx:define>
+            <Double fx:id="xLabelPosition" fx:value="56.0"/><!-- 라벨의 x 좌표 위치 -->
+       </fx:define>
+
+      <Label text="상품 등록 화면" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label text="상품명" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font size="14.0" fx:id="myFont01" />
+         </font></Label>
+      <TextField prefHeight="22.0" prefWidth="210.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="58.0" />
+       <Label font="$myFont01" text="제조회사" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="90.0" />
+       <TextField prefHeight="22.0" prefWidth="210.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="88.0" />
+       <Label text="이미지01" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="120.0">
+           <font>
+               <Font size="14.0" />
+           </font></Label>
+       <TextField prefHeight="22.0" prefWidth="210.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="118.0" />
+       <Label text="이미지02" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="150.0">
+           <font>
+               <Font size="14.0" />
+           </font></Label>
+       <TextField prefHeight="22.0" prefWidth="210.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="148.0" />
+       <Label text="이미지03" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="180.0">
+           <font>
+               <Font size="14.0" />
+           </font></Label>
+       <TextField prefHeight="22.0" prefWidth="210.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="178.0" />
+       <Label text="재고" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="210.0">
+           <font>
+               <Font size="14.0" />
+           </font></Label>
+       <TextField prefHeight="22.0" prefWidth="210.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="208.0" />
+       <Label text="단가" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="240.0">
+           <font>
+               <Font size="14.0" />
+           </font></Label>
+       <TextField prefHeight="22.0" prefWidth="210.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="238.0" />
+       <Label text="카테고리" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="270.0">
+           <font>
+               <Font size="14.0" />
+           </font></Label>
+       <TextField prefHeight="22.0" prefWidth="210.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="268.0" />
+       <Label text="재고" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="300.0">
+           <font>
+               <Font size="14.0" />
+           </font></Label>
+       <TextField prefHeight="22.0" prefWidth="210.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="298.0" />
+       <Label text="상세 설명" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="330.0">
+           <font>
+               <Font size="14.0" />
+           </font></Label>
+       <TextField prefHeight="22.0" prefWidth="210.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="328.0" />
+       <Label text="적립포인트" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="360.0">
+           <font>
+               <Font size="14.0" />
+           </font></Label>
+       <TextField prefHeight="22.0" prefWidth="210.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="358.0" />
+       <Label text="입고 일자" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="390.0">
+           <font>
+               <Font size="14.0" />
+           </font></Label>
+       <TextField prefHeight="22.0" prefWidth="210.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="388.0" />
+   </children>
+</AnchorPane>

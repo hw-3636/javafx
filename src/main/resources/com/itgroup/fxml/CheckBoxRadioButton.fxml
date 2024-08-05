@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane minHeight="154.0" prefHeight="295.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itgroup.controller.CheckBoxRadioButtonController">
+    <top>
+        <HBox alignment="CENTER" prefHeight="268.0" prefWidth="668.0">
+            <children>
+                <VBox alignment="CENTER" prefHeight="298.0" prefWidth="86.0" spacing="10.0">
+                    <children>
+                        <CheckBox fx:id="changeImage01" mnemonicParsing="false" onAction="#handleChkAction" text="안경" />
+                        <CheckBox fx:id="changeImage02" mnemonicParsing="false" onAction="#handleChkAction" text="모자" />
+                    </children>
+                </VBox>
+                <ImageView fx:id="checkImageView" fitHeight="150.00009999999747" fitWidth="181.0" pickOnBounds="true" preserveRatio="false">
+                    <image>
+                        <Image url="@../images/geek.gif" />
+                    </image>
+                    <HBox.margin>
+                        <Insets right="10.0" />
+                    </HBox.margin>
+                </ImageView>
+                <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                    <children>
+                        <RadioButton fx:id="breadRadio01" mnemonicParsing="false" text="브리오슈" userData="brioche_01.png">
+                            <toggleGroup>
+                                <ToggleGroup fx:id="breadGroup" />
+                            </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="breadRadio02" mnemonicParsing="false" text="크로와상" toggleGroup="$breadGroup" userData="croissant_01.png" />
+                        <RadioButton fx:id="breadRadio03" mnemonicParsing="false" text="치아바타" toggleGroup="$breadGroup" userData="ciabatta_01.png" />
+                    </children>
+                </VBox>
+                <ImageView fx:id="radioImageView" fitHeight="200.0" fitWidth="200.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="false" />
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <Slider fx:id="mySlider" max="17.0" min="10.0" value="12.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets right="10.0" />
+         </BorderPane.margin></Slider>
+    </center>
+    <bottom>
+        <FlowPane alignment="CENTER" prefHeight="47.0" prefWidth="668.0">
+            <children>
+                <Button fx:id="fxmlButtonExit" mnemonicParsing="false" prefHeight="26.0" prefWidth="122.0" onAction="#handleButtonExit" text="종료 버튼">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <FlowPane.margin>
+                        <Insets bottom="5.0" />
+                    </FlowPane.margin>
+                </Button>
+            </children>
+         <BorderPane.margin>
+            <Insets top="30.0" />
+         </BorderPane.margin>
+        </FlowPane>
+    </bottom>
+</BorderPane>

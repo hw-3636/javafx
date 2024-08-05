@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="1120.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itgroup.controller.CoffeeExamController">
+    <top>
+        <AnchorPane prefHeight="120.0" prefWidth="1120.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button onAction="#onInsert" layoutX="15.0" layoutY="15.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="105.0" text="등록">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                </Button>
+                <Button onAction="#onUpdate" layoutX="165.0" layoutY="15.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="105.0" text="수정">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                </Button>
+                <Button onAction="#onDelete" layoutX="315.0" layoutY="15.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="105.0" text="삭제">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                </Button>
+                <Button onAction="#onSaveFile" fx:id="buttonSaveFile" layoutX="465.0" layoutY="15.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="105.0" text="파일로 저장">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                </Button>
+                <Button onAction="#onClosing" layoutX="615.0" layoutY="15.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="105.0" text="종료">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                </Button>
+                <Label layoutX="150.0" layoutY="60.0" prefHeight="30.0" prefWidth="105.0" text="출력 모드 선택: " />
+                <Label fx:id="labelChoice" layoutX="420.0" layoutY="60.0" prefHeight="30.0" prefWidth="105.0" text="현재 모드: mode" />
+                <Label id="labelChoice" fx:id="pageStatus" layoutX="660.0" layoutY="60.0" prefHeight="30.0" prefWidth="105.0" text="총 51건[1/6]" />
+                <ComboBox onAction="#choiceSelect" fx:id="fieldSearch" layoutX="240.0" layoutY="64.0" prefHeight="20.0" prefWidth="145.0" promptText="전체보기" />
+            </children>
+        </AnchorPane>
+    </top>
+    <center>
+        <VBox prefHeight="420.0" prefWidth="510.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="productTable" prefHeight="360.0" prefWidth="510.0">
+              <columns>
+                <TableColumn prefWidth="120.0" text="상품번호" />
+                <TableColumn prefWidth="120.0" text="이름" />
+                <TableColumn prefWidth="120.0" text="제조회사" />
+                <TableColumn prefWidth="120.0" text="카테고리" />
+                <TableColumn prefWidth="120.0" text="입고일자" />
+              </columns>
+            </TableView>
+            <Pagination fx:id="pagination" prefHeight="55.0" prefWidth="725.0" />
+         </children></VBox>
+    </center>
+    <right>
+        <VBox prefHeight="420.0" prefWidth="395.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="390.0" fitWidth="360.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" />
+               </VBox.margin></ImageView>
+         </children></VBox>
+    </right>
+</BorderPane>
