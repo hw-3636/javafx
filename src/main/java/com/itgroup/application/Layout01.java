@@ -14,7 +14,7 @@ public class Layout01 extends Application {
     // try push first V4
     // 충돌 테스트 - 수정본
     // try push second V5
-    // 충돌 테스트 - 원본수정
+    // 충돌 테스트 - 원본수정...
     @Override
     public void start(Stage stage) throws Exception {
         String fxmlFile = "/com/itgroup/fxml/" + "Layout01.fxml";
