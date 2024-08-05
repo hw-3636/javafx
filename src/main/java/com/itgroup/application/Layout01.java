@@ -13,7 +13,7 @@ public class Layout01 extends Application {
     // 원본 수정하면 다운로드 받을 때 어떻게 되는가? V3
     // try push first V4
     // try push second V5
-    // 충돌 테스트 - 원본
+    // 충돌 테스트 - 원본수정
     @Override
     public void start(Stage stage) throws Exception {
         String fxmlFile = "/com/itgroup/fxml/" + "Layout01.fxml";
